@@ -40,4 +40,4 @@ Change the locolhost uri in app.js in Clientserver folder:
 
 use `react-native run-android`to start the android app.
 
-Then you can add customer in android simulator, then query in http://yourlocalhost:3000/graphql
+Then you can add customer in android simulator, then query in http://localhost:3000/graphql
