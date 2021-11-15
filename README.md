@@ -1,6 +1,8 @@
 # Tutorial6 Project execute Instructions 
 Zhuo Yixuan A0242703N
 
+### Git Repository: https://github.com/Yeseniazhuo/WaitinglistAppEdition
+
 ## Execute the following code to start Server.
 
 ### Clone the server repository or use current one /api foler to start server
@@ -21,7 +23,7 @@ transfrom .jsx to .js：
 
 start the Web：
 `npm start`
- 
+
 ### <strong>Server start at port 3000</strong>
 
 
@@ -32,8 +34,8 @@ First change the dictionary to Clientapp, and open android studio
 install all the package:
 `npm install`
 
-Change the locolhost uri in app.js in Clientserver folder: 
-`uri: "http://yourlocalhost:3000/graphql"` 
+Change the yourIPv4 uri in app.js in Clientserver folder: 
+`uri: "http://yourIPv4:3000/graphql"` 
 
 use `react-native run-android`to start the android app.
 
