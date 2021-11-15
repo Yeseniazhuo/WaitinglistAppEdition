@@ -3,26 +3,31 @@ import { Button, TextInput, View, Text, StyleSheet, Alert} from "react-native";
 import { ApolloProvider, Mutation} from "react-apollo";
 import { ApolloClient,InMemoryCache,HttpLink} from "apollo-boost";
 import gql from "graphql-tag";
+import { graphql } from "graphql";
 
-/*  uri: "http://yourlocalhost:3000/graphql" */
+/*  uri: "http://yourIPV4:3000/graphql" */
 const client = new ApolloClient({
-  link: new HttpLink({ uri: 'http://127.0.0.1:3000/graphql'}),
+  link: new HttpLink({ uri: 'http://192.168.101.25/graphql'}),
   cache: new InMemoryCache(), 
     });
                               
-const addCustomer = gql`mutation customerAdd($customer: newCustomer!) {
+export default class App extends Component {
+    constructor() {
+         super();
+        this.state =  { name: "", phone: "" };
+        }
+    render() {
+      const addCustomer = gql`mutation customerAdd($customer: newCustomer!) {
         customerAdd(customer: $customer) {
           id name phone time
         }
+      }`;   
+      const queryCustomer = gql`query {
+        waitlist {
+          id name phone time
+        }
       }`;
-
-export default class App extends Component {
-  constructor() {
-    super();
-    this.state =  { name: "", phone: "" };
-  }
-    render() {   
-        return (
+      return (
           <ApolloProvider client={client}>
             <View style={styles.container}>
                <Text style={styles.title}> Hotel California Wast List</Text>
