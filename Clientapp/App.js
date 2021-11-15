@@ -7,8 +7,9 @@ import gql from "graphql-tag";
 /*  uri: "http://yourlocalhost:3000/graphql" 
 */
 const client = new ApolloClient({
-                            link: new HttpLink({ uri: "http://127.0.0.1:3000/graphql" }),
-                                cache: new InMemoryCache(), 
+                            link: new HttpLink({ 
+                              uri: 'http://127.0.0.1:3000/graphql'}),
+                            cache: new InMemoryCache(), 
                               });
                               
 const addCus = gql`mutation customerAdd($customer: newCustomer!) {
