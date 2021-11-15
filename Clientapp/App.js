@@ -54,7 +54,7 @@ export default class App extends Component {
                         const newCustomer = { name: this.state.name, phone: this.state.phone }
                         Alert.alert('Adding to the mongoDB');              
                         addMutation({
-                        variables: { customer: newCustomer },
+                          variables: { customer: newCustomer },
                                   });
                         this.setState({name:'',phone:''});}
                       }
