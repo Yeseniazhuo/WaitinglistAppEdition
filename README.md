@@ -1,14 +1,11 @@
 # Tutorial6 Project execute Instructions 
 Zhuo Yixuan A0242703N
 
-Execute the following code to start Server.
+##Execute the following code to start Server.
 
-## Clone the server repository or use current one /api foler to start server
-
-### install package
-
+### Clone the server repository or use current one /api foler to start server
 `git clone https://github.com/Yeseniazhuo/HotelWaitinglist.git`
-
+install package
 `npm install`
 
 ### init and start mongodb
