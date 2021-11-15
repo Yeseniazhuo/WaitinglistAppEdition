@@ -15,9 +15,6 @@ start mongodb：
 initiate database：
 `mongo IT5007Tutorial scripts/init.mongo.js`
 
-### Test the CRUD (after starting mongoDB)
-`node scripts/trymongo.js`
-
 ### Start Web
 transfrom .jsx to .js：
 `npx babel src --presets @babel/react --out-dir public`
