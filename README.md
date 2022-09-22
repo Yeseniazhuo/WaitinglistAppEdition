@@ -1,5 +1,4 @@
-# Tutorial6 Project execute Instructions 
-Zhuo Yixuan A0242703N
+# Project execute Instructions 
 
 ### Git Repository: https://github.com/Yeseniazhuo/WaitinglistAppEdition
 
